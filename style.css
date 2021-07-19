@@ -1,0 +1,107 @@
+/*IMPORTAR FONTE ROBOTO*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap');
+
+/*RESET*/
+*{
+    font-family: 'Roboto', sans-serif;
+    font-size: 100%;
+}
+
+/*CORPO*/
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #101011;
+}
+
+/*DIV APP*/
+.app{
+    position: relative;
+}
+
+/*DIV CONTAINER*/
+.container{
+    background-color: #a8bfb6;
+    left: 0;
+    right: 0;
+    top: 50vh;
+    transform: translateY(-50%);
+    margin: auto;
+    position: absolute;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/*TÍTULO PRINCIPAL*/
+.container h1{
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 2em;
+}
+
+/*ESTILO PRA TODOS OS CAMPOS DO FORMULÁRIO*/
+input{
+    font-size: 1em;
+    display: inline;
+    margin: 2% auto;
+    height: 30px;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+}
+
+/*CAMPO TEXTO*/
+input[type='text']{
+    padding-left: 10px;
+    width: 75%;
+}
+
+/*CAMPO ENVIAR*/
+input[type='submit']{
+    height: 34px;
+    border: none;
+    background-color: gray;
+    color: white;
+    cursor: pointer;
+    margin-left: 1%;
+}
+
+/*CAMPO ENVIAR AO PASSAR MOUSE POR CIMA*/
+input[type=submit]:hover{
+    background-color: dimgray;
+    transition: 0.5s;
+}
+
+/*ELEMENTO DA LISTA*/
+ul li{
+    list-style-type: none;
+    text-decoration: none;
+    text-align: left;
+    margin: 2%;
+}
+
+/*ESTILO PARA BOTÃO PARA APAGAR ITEM DA LISTA E PARA BOTÃO QUE LIMPA TUDO*/
+button.apagar, button#limpar{
+    color: white;
+    align-content: end;
+    background-color: rgb(196, 109, 109);
+    border-radius: 5px;
+}
+
+/*BOTÃO QUE APAGA ITEM DA LISTA*/
+button.apagar{
+    margin-left: 3%;
+}
+
+/*BOTÃO QUE LIMPA TUDO*/
+button#limpar{
+    opacity: 0;
+}
+
+/*DIV PRA CENTRALIZAR*/
+#resultado{
+    text-align: center;
+    margin: auto;
+}
